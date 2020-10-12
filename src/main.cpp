@@ -18,6 +18,7 @@
 **/
 #include "virtualkeyboard.h"
 #include <QApplication>
+#include "autoshow.h"
 
 int main(int argc, char *argv[])
 {
@@ -25,7 +26,9 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     VirtualKeyboard *keyboard = new VirtualKeyboard;
     QObject::connect(keyboard, &VirtualKeyboard::aboutToClose, &a, &QApplication::quit);
-    keyboard->show();
+//    keyboard->show();
+
+    AutoShow *as = new AutoShow(keyboard);
 
     return a.exec();
 }

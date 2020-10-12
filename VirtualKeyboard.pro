@@ -24,9 +24,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += link_pkgconfig debug
 
-PKGCONFIG += xtst x11
+PKGCONFIG += xtst x11 atspi-2 gsettings-qt
 
 include(VirtualKeyboard.pri)
 
+HEADERS += $$PWD/src/settings.h \
+    src/atspistatetracker.h \
+    src/autoshow.h
+
 SOURCES += \
-        $$PWD/src/main.cpp
+        $$PWD/src/main.cpp \
+        $$PWD/src/settings.cpp \
+        src/atspistatetracker.cpp \
+        src/autoshow.cpp
