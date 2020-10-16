@@ -1,0 +1,24 @@
+Source: kylin-virtual-keyboard
+Section: utils
+Priority: optional
+Maintainer: zhaikangning <zhaikangning@kylinos.cn>
+Build-Depends: debhelper (>=9.0.0),
+               pkgconf,
+               libgsettings-qt-dev,
+               qtbase5-dev,
+               qt5-qmake,
+               qtchooser,
+               qtscript5-dev,
+               qttools5-dev-tools,
+               libatspi2.0-dev,
+               libxtst-dev,
+               libx11-dev,	
+Standards-Version: 4.4.1
+Homepage: https://github.com/ukui/VirtualKeyboard.git
+#Vcs-Browser: https://github.com/ubuntukylin/kylin-boot-repair
+#Vcs-Git: https://github.com/ubuntukylin/kylin-boot-repair.git
+
+Package: kylin-virtual-keyboard
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description:kylin-virtual-keyboard

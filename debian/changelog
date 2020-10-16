@@ -1,0 +1,8 @@
+kylin-virtual-keyboard (1.0.0-1+1016) v101; urgency=medium
+
+  * Feature: Automatically pop up the keyboard according to the strategy
+
+    - 根据是否是平板和一定的策略自动弹出虚拟键盘 
+
+ -- zhaikangning <zhaikangning@kylinos.cn>  Fri, 16 Oct 2020 14:27:47 +0800
+
